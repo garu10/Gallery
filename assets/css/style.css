@@ -1,5 +1,5 @@
 /* background video styling */
-.video-background-container {
+.video-background-container, .image-background-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     overflow: hidden; 
 }
 
-.video-background {
+.video-background, .image-background  {
     position: absolute;
     top: 50%;
     left: 50%;
