@@ -21,7 +21,7 @@
 }
 
 .home-container {
-    position: relative; 
+    position: fixed;
     z-index: 1; 
-    background-color: transparent; 
 }
+

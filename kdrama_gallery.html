@@ -1,0 +1,203 @@
+\<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="container-fluid position-sticky p-0 top-0 p-lg" style="z-index:100;">
+            <div class="row g-0">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg p-4 shadow-sm">
+                        <div class="container flex-lg-column align-items-lg-center">
+                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="index.html">
+                                <span class="fw-bold">Yoboseyo</span>
+                            </a>
+                            <button
+                                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav nav-underline text-uppercase nav-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="kdrama_gallery.html">Kdrama Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Recommendations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Dark Mode</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="video-background-container">
+            <video autoplay muted loop id="myVideo" class="video-background">
+                <source src="assets/vids/background_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="container-fluid main-content-wrapper p-0">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 text-split-col">
+                        <div class="container-fluid py-5 text-center">
+                            <div class="row align-items-center text-center">
+                                <div class="col">
+                                    <h1 class="display-1 fw-bold">Hello World!</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit eos obcaecati ea. Totam, nisi, unde quam deleniti dolor obcaecati porro, quasi corporis ex culpa quaerat dicta itaque perspiciatis dolorum..</p>
+                                    <a class="btn btn-secondary">
+                                        recommend
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 shadow-lg">
+                        <div class="container-lg px-5">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="carousel-indicators" class="carousel-indicators"></div>
+                                        <div id="carousel-slides" class="carousel-inner"></div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid bg-white p-5">
+            <div class="row">
+                <div class="col">
+                    footer toh
+                </div>
+            </div>
+        </div>
+        <script>
+            const users = [
+                {
+                    "firstname": "John",
+                    "lastname": "Doe",
+                    "age" : 100,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": "kbefvjfevjprwi"
+                },
+                {
+                    "firstname": "Marga",
+                    "lastname": "Rit",
+                    "age" : 120,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": ";knrfknrpijr3p"
+                },
+                {
+                    "firstname": "Ralph",
+                    "lastname": "Burdado",
+                    "age" : 5,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": "knrpk3fjpirjfoe2jkf"
+                },
+                {
+                    "firstname": "Sev",
+                    "lastname": "Bading",
+                    "age" : 10000,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": "lndwjvqnr3pijwps."
+                },
+                {
+                    "firstname": "Hello",
+                    "lastname": "world",
+                    "age" : 70,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": "[r3fnprfnoj2ebn fq dfnewfj]"
+                },
+                {
+                    "firstname": "Hello Vlog",
+                    "lastname": "Welcome to my gaiz",
+                    "age" : 83,
+                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
+                    "description": "bqjlfbrjonfpwqjpfjwepojfop"
+                }
+            ];
+
+            var slidesContainer = document.getElementById("carousel-slides");
+            var indicatorsContainer = document.getElementById("carousel-indicators");
+            const cardsPerSlide = 1; 
+
+            slidesContainer.innerHTML = '';
+            indicatorsContainer.innerHTML = '';
+
+            for (let i = 0; i < users.length; i += cardsPerSlide) {
+                const slideUsers = users.slice(i, i + cardsPerSlide);
+                const slideIndex = i / cardsPerSlide;
+                const isActive = slideIndex === 0 ? 'active' : '';
+
+                indicatorsContainer.innerHTML += `<button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="${slideIndex}" class="${isActive}" aria-label="Slide ${slideIndex + 1}"></button>`;
+
+                let slideHTML = `<div class="carousel-item ${isActive}"><div class="row g-4 justify-content-center py-5">`;
+
+                slideUsers.forEach(user => {
+                    slideHTML += `
+                        <div class="col-12">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="${user.picture}"
+                                class="card-img-top rounded-top"/>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-semibold">${user.firstname} ${user.lastname}</h5>
+                                    <p class="card-text text-muted">
+                                        ${user.description}
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Age: ${user.age}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                slideHTML += `</div></div>`;
+                slidesContainer.innerHTML += slideHTML;
+            }
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

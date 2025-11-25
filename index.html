@@ -19,142 +19,26 @@
     </head>
 
     <body>
-        <div class="container-fluid p-0 fixed-top">
-            <!-- Navbar -->
-            <div class="row g-0">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg p-4">
-                        <div class="container flex-lg-column align-items-lg-center">
-                            
-                            <!-- Logo -->
-                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="in">
-                                <span class="fw-bold">Yoboseyo</span>
-                            </a>
-                            <!-- Toggle Button -->
-                            <button
-                                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <!-- Nav Links -->
-                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                                <ul class="navbar-nav nav-underline text-uppercase nav-menu">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="culture.php">Cultures</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="hotels.html">Hotels</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
         <div class="video-background-container">
             <video autoplay muted loop id="myVideo" class="video-background">
-                <source src="assets/vids/GROUP 7.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="assets/vids/background_vid.mp4" type="video/mp4">
             </video>
         </div>
 
-        <div class="container py-5">
-            
-            <div class="row min-vh-100 align-items-center text-center text-white">
-                <div class="col">
-                    <h1 class="display-1 fw-bold">Hello World!</h1>
-                    <p class="lead">scroll down</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col p-5 bg-white text-dark shadow-lg">
-                    <h2 class="mb-4">Content</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in doloremque, sapiente totam facilis libero est, magnam quis incidunt ipsam, et illo mollitia voluptas a nesciunt odio architecto! Officia, quae.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                    <div id="content" class="row row-cols-1 row-cols-md-3 g-4"></div>
-                    <div style="height: 100vh;"></div> <p>This is the very end of the overlapping content.</p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    </div>  
+        <div class="container-fluid home-container py-5">
+            <div class="row min-vh-100 align-items-center text-left text-white">
+                <div class="col-9">
+                    <h1 class="display-1 fw-bold text-dark">Hello World!</h1>
+                    <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolores incidunt vero ratione quis tempora sapiente ut molestias vitae distinctio repellat quaerat molestiae amet perspiciatis, consectetur fuga. Aspernatur, iure facilis!</p>
+                    <a class="btn btn-primary" href= "kdrama_gallery.html">
+                        kdrama gallery
+                    </a>
+                    <a class="btn btn-secondary">
+                        recommend
+                    </a>
                 </div>
             </div>
         </div>
-        <script>
-            const users = [
-                {
-                    "firstname": "John",
-                    "lastname": "Doe",
-                    "age" : 100,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": "kbefvjfevjprwi"
-                },
-                {
-                    "firstname": "Marga",
-                    "lastname": "Rit",
-                    "age" : 120,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": ";knrfknrpijr3p"
-                },
-                {
-                    "firstname": "Ralph",
-                    "lastname": "Burdado",
-                    "age" : 5,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": "knrpk3fjpirjfoe2jkf"
-                },
-                {
-                    "firstname": "Sev",
-                    "lastname": "Bading",
-                    "age" : 10000,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": "lndwjvqnr3pijwps."
-                },
-                {
-                    "firstname": "Hello",
-                    "lastname": "world",
-                    "age" : 70,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": "[r3fnprfnoj2ebn fq dfnewfj]"
-                },
-                {
-                    "firstname": "Hello Vlog",
-                    "lastname": "Welcome to my gaiz",
-                    "age" : 83,
-                    "picture" : "assets/pics/452513195_490061490326283_8146501841080415883_n.jpg",
-                    "description": "bqjlfbrjonfpwqjpfjwepojfop"
-                }
-            ];
-
-
-            var content = document.getElementById("content");
-            users.forEach(user => {
-                content.innerHTML += `
-                    <div class="col">
-                        <div class="card shadow h-100">
-                            <img src="${user.picture}" class="card-img-top" alt="Picture of ${user.firstname}">
-                            <div class="card-body">
-                                <h5 class="card-title">${user.firstname} ${user.lastname}</h5>
-                                <p class="card-text">${user.description}</p>
-                                <p class="card-text"><small class="text-muted">Age: ${user.age}</small></p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
