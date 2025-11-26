@@ -25,7 +25,7 @@ const users = [
             "nen_type": "Conjurer (Specialist when eyes are scarlet)",
             "ability": "Chain Jail/Judgment Chain",
             "picture": "assets/img/normal_mode/kurapika_normal.jpg",
-            "fight_picture": "assets/img/fight_mode/kurapika_fight.jpeg",
+            "fight_picture": "assets/img/fight_mode/kurapika_fight.webp",
             "description": "The last survivor of the Kurta Clan, he seeks vengeance against the Phantom Troupe.",
             "group": "Protagonists"
         },
