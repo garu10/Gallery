@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Hunter X Hunter Gallery</title>
+        <title>HxH</title>
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -16,16 +16,16 @@
         />
     </head>
 
-    <body>
+    <body id="body" data-bs-theme="light">
         <!-- header -->
-        <div class="container-fluid p-0 fixed-top">
+        <div class="container-fluid p-0 top-0 p-lg sticky-top bg-body-tertiary bg-opacity-50 rounded-5 mt-2">
             <div class="row g-0">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-lg p-4 bg-white shadow-sm">
+                    <nav class="navbar navbar-expand-lg p-4 shadow-sm">
                         <div class="container flex-lg-column align-items-lg-center">
                             
-                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="in">
-                                <span class="fw-bold">Yoboseyo</span>
+                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="in" style ="width: 100px; height: 100px;">
+                                <img id="navLogo" src="assets/img/logo/logo_dark.png" class="d-inline-block w-100 h-100 object-fit-contain" >
                             </a>
                             <button
                                 class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,11 +36,27 @@
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                                    <li class="nav-item dropdown">
+                                        <a 
+                                            class="nav-link active dropdown-toggle" 
+                                            href="#"
+                                            id="galleryDropdown" 
+                                            role="button" 
+                                            data-bs-toggle="dropdown" 
+                                            aria-expanded="false" 
+                                        >
+                                            Gallery
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                            <li><a class="dropdown-item" href="#Protagonists">Protagonists</a></li>
+                                            <li><a class="dropdown-item" href="#Zoldyck Family">Zoldyck Family</a></li>
+                                            <li><a class="dropdown-item" href="#Phantom Troupe">Phantom Troupe</a>
+                                            <li><a class="dropdown-item" href="#Chimera Ants">Chimera Ants</a>
+                                            <li><a class="dropdown-item" href="#Hunters & Zodiacs">Hunters & Zodiacs</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Light Mode</a>
+                                        <a class="btn btn-secondary" id="modeToggle" onclick="galleryToggle()">⏾</a>
                                     </li>
                                 </ul>
                             </div>
@@ -58,16 +74,18 @@
         <!-- character cards -->
         <div class="container py-5">
             
-            <div class="row min-vh-100 align-items-center text-center text-white">
+            <div class="row min-vh-100 top-0 p-0 align-items-center text-center">
                 <div class="col">
-                    <h1 class="display-1 fw-bold">Hunter X Hunter</h1>
-                    <p class="lead">Character Gallery</p>
+                        <div class="logo">
+                            <img src="assets/img/logo/hxh_logo.webp">
+                        </div>
+                    <h3><em>Character Gallery</em></p>
                 </div>
             </div>
             
             <div class="row">
-                <div class="col p-5 bg-white text-dark shadow-lg">
-                    <h2 class="mb-4">Hunter x Hunter Characters</h2>
+                <div class="col p-5 bg-body-tertiary bg-opacity-50 rounded-5 shadow-lg">
+                    <h2 class="mb-2">Hunter x Hunter Characters</h2>
                     
                     <div class="row g-4" id="content"></div> 
                 </div>
@@ -97,10 +115,12 @@
             </div>
         </div>
         <!-- footer -->
-        <div class="container-fluid bg-white p-5">
+        <div class="container-fluid bg-body-tertiary bg-opacity-50 p-5">
             <div class="row">
                 <div class="col">
-                    footer toh
+                    <div class="h3 align-items-center text-center">
+                        footer toh
+                    </div>
                 </div>
             </div>
         </div>
